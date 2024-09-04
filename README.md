@@ -7,3 +7,5 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 ### Ideal Model
 ![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/ideal%20model.png "DBSCAN Performance Comparison")
 
+### Federated Model
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/federated%20model.png "DBSCAN Performance Comparison")
