@@ -8,7 +8,7 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | **Symbol**                                | **Description**                                                     |
 |-------------------------------------------|---------------------------------------------------------------------|
 | $F$                                 | Input feature map extracted by the encoder.                         |
-| $F'$                                  | Feature map after channel attention: \\( F' = M_c(F) \otimes F \\).   |
+| $F^'$                                  | Feature map after channel attention: \\( F' = M_c(F) \otimes F \\).   |
 | \\( F'' \\)                                 | Feature map after spatial attention: \\( F'' = M_s(F') \otimes F' \\).|
 | \\( M_c(F) \\)                              | Channel attention map generated from \\( F \\).                       |
 | \\( M_s(F) \\)                              | Spatial attention map generated from \\( F \\).                       |
