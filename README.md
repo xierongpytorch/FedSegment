@@ -8,8 +8,8 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | **Symbol**                                | **Description**                                                     |
 |-------------------------------------------|---------------------------------------------------------------------|
 | $F$                                 | Input feature map extracted by the encoder.                         |
-| $F'$                                  | Feature map after channel attention: $ F' = M_c(F) \otimes F $.   |
-| $ F''$                                | Feature map after spatial attention: $ F'' = M_s(F') \otimes F' $.|
+| $F\prime$                                  | Feature map after channel attention: $ F\prime = M_c(F) \otimes F $.   |
+| $ F\prime\prime$                                | Feature map after spatial attention: $ F\prime\prime = M_s(F\prime) \otimes F\prime $.|
 | $ M_c(F) $                              | Channel attention map generated from $ F $.                       |
 | $ M_s(F) $                              | Spatial attention map generated from $ F $.                       |
 | $ \sigma(\cdot) $                       | Sigmoid activation function.                                        |
@@ -29,9 +29,9 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ H_2(\cdot) $                                  | Hash function, $ H_2: \{0,1\}^* \times G_1 \rightarrow \mathbb{Z}_p^* $. |
 | $ H_3(\cdot) $                                  | Hash function, $ H_3: \{0,1\}^* \rightarrow \mathbb{Z}_p^* $.     |
 | $ X_{\text{TTP}} $, $ Y_{\text{TTP}} $        | Private key and public key of the TTP.                              |
-| $ X_{\text{CS}}' $, $ Y_{\text{CS}}' $        | Private and public key components of the Cloud Server (CS).         |
-| $ X_{\text{PS}}' $, $ Y_{\text{PS}}' $        | Private and public key components of the Power Station (PS).        |
-| $ X_s' $, $ Y_s' $                            | Private and public key components of substation $ s $.            |
+| $ X_{\text{CS}}\prime $, $ Y_{\text{CS}}\prime $        | Private and public key components of the Cloud Server (CS).         |
+| $ X_{\text{PS}}\prime $, $ Y_{\text{PS}}\prime $        | Private and public key components of the Power Station (PS).        |
+| $ X_s\prime $, $ Y_s\prime $                            | Private and public key components of substation $ s $.            |
 | $ ID_{\text{CS}} $, $ ID_{\text{PS}} $, $ ID_s $ | Identity strings of CS, PS, and substation $ s $.           |
 | $ s_{cp} $, $ s_{ip} $                        | Shared secrets for secure communication.                            |
 | $ M $, $ M_1 $, $ M_2 $                     | Training parameters; $ M_1 $ for substations, $ M_2 $ for PS.   |
@@ -42,15 +42,15 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ U_s $, $ U_i $                              | Signature components involving private keys and hash functions.     |
 | $ \sigma_s $, $ \sigma_i $                    | Signatures composed of signature components.                        |
 | $ Z_s $, $ Z_i $                              | Session parameters in signature generation.                         |
-| $ Z_s' $, $ Z_i' $                            | Encrypted session parameters sent to PS and CS.                     |
+| $ Z_s\prime $, $ Z_i\prime $                            | Encrypted session parameters sent to PS and CS.                     |
 | $ \operatorname{Enc}_s(\cdot) $, $ \operatorname{Enc}_i(\cdot) $ | Encryption functions. |
 | $ \operatorname{Dec}_s(\cdot) $, $ \operatorname{Dec}_i(\cdot) $ | Decryption functions. |
 | $ req_s $, $ req_i $                          | Update request messages sent by participants.                       |
 | $ R $                                           | Set of requests used in batch verification.                         |
 | $ N $, $ M $                                  | Number of substations $ N $ and power stations $ M $ involved.  |
-| $ I_0 $, $ I_0' $                             | Original image dataset and preprocessed image dataset.              |
+| $ I_0 $, $ I_0\prime $                             | Original image dataset and preprocessed image dataset.              |
 | $ I(x, y) $                                     | Pixel value at position $ (x, y) $ in image $ I $.              |
-| $ I'(x, y) $                                    | Pixel value after transformations.                                  |
+| $ I\prime(x, y) $                                    | Pixel value after transformations.                                  |
 | $ R(I(x, y), \theta) $                          | Rotation of pixel $ I(x, y) $ by angle $ \theta $.              |
 | $ Z(I(x, y), s) $                               | Zoom operation on pixel $ I(x, y) $ with scale $ s $.           |
 | $ C(I(x, y), \alpha) $                          | Contrast adjustment of pixel $ I(x, y) $ by factor $ \alpha $.  |
@@ -59,9 +59,9 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ p_{\text{con}} $, $ p_{\text{dist}} $       | Probabilities of contrast adjustment and distortion.                |
 | $ \epsilon $                                     | Gaussian noise sampled from $ \mathcal{N}(0, I) $.                |
 | $ \overline{a}_t $                              | Cumulative product of noise schedule parameters up to time $ t $. |
-| $ I_t' $                                        | Noisy image at timestep $ t $ in the diffusion process.           |
-| $ \epsilon_\theta(I_t', t) $                    | Predicted noise by the neural network at time $ t $.              |
-| $ \hat{I}_0' $                                  | Estimated original image from noisy image $ I_t' $.               |
+| $ I_t\prime $                                        | Noisy image at timestep $ t $ in the diffusion process.           |
+| $ \epsilon_\theta(I_t\prime, t) $                    | Predicted noise by the neural network at time $ t $.              |
+| $ \hat{I}_0\prime $                                  | Estimated original image from noisy image $ I_t\prime $.               |
 | $ D_{\text{CLIP}} $                             | CLIP-based loss function measuring image-text discrepancy.          |
 | $ \text{CLIP}_{\text{img}}(\cdot) $             | Image encoder of the CLIP model.                                    |
 | $ \text{CLIP}_{\text{txt}}(\cdot) $             | Text encoder of the CLIP model.                                     |
@@ -69,8 +69,8 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ m $                                           | Mask indicating the region of interest in the image.                |
 | $ D_c $                                         | Cosine distance function for embeddings.                            |
 | $ \odot $                                       | Element-wise multiplication (Hadamard product).                     |
-| $ I_{t-1,\text{fg}}' $, $ I_{t-1,\text{bg}}' $ | Denoised images of foreground and background at time $ t-1 $.   |
-| $ I_{t-1}' $                                    | Combined denoised image at time $ t-1 $.                          |
+| $ I_{t-1,\text{fg}}\prime $, $ I_{t-1,\text{bg}}\prime $ | Denoised images of foreground and background at time $ t-1 $.   |
+| $ I_{t-1}\prime $                                    | Combined denoised image at time $ t-1 $.                          |
 | $ \text{fea}_0 $, $ \text{fea}_1 $            | Feature maps from local (student) and global (teacher) models.      |
 | $ \text{Sim} $                                  | Adjusted feature similarity matrix.                                 |
 | $ \text{FFT}(\cdot) $, $ \text{IFFT}(\cdot) $ | Fourier Transform and Inverse Fourier Transform.                    |
