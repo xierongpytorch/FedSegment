@@ -3,27 +3,15 @@ Journal Title: Pattern Recognition
 Title of the **Manuscript**: *FedSegment: A Novel Federated Learning Framework for Semantic Segmentation of Secondary Screen Cabinet Terminal Block in Smart Substation* 
 
 Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
-<div align="center">
-    <h1>公式示例</h1>
-    <!-- MathJax 配置 -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']],
-            displayMath: [['$$','$$'], ['\\[','\\]']],
-            processEscapes: true
-            }
-        });
-    </script>
-    <!-- 行内公式 -->
-    $\int_{a}^{b} x^2 dx$
-    <!-- 单行公式 -->
-    $$ \sum_{n=1}^{\infty} \frac{1}{n^2} $$
-</div>
 
+
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+The Cauchy-Schwarz Inequality
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 ### Symbols and Notations Used in the Methodology
-
 | **Symbol**                                | **Description**                                                     |
 |-------------------------------------------|---------------------------------------------------------------------|
 | \\(F \\)                                 | Input feature map extracted by the encoder.                         |
@@ -38,7 +26,6 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | \\( f^{7 \times 7}(\cdot) \\)               | \\( 7 \times 7 \\) convolution operation in spatial attention.        |
 | \\( [\cdot \, ; \, \cdot] \\)               | Concatenation operator along the channel dimension.                 |
 | \\( \otimes \\)                             | Element-wise multiplication operator.                               |
-|---------------------------------------------------|---------------------------------------------------------------------|
 | \\( l \\)                                           | Security parameter determining key sizes.                           |
 | \\( p \\)                                           | Large prime number, \\( p > 2^l \\), order of the groups.             |
 | \\( G_1 \\)                                         | Cyclic additive group of order \\( p \\).                             |
@@ -68,7 +55,6 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | \\( req_s \\), \\( req_i \\)                          | Update request messages sent by participants.                       |
 | \\( R \\)                                           | Set of requests used in batch verification.                         |
 | \\( N \\), \\( M \\)                                  | Number of substations \\( N \\) and power stations \\( M \\) involved.  |
-|---------------------------------------------------|---------------------------------------------------------------------|
 | \\( I_0 \\), \\( I_0' \\)                             | Original image dataset and preprocessed image dataset.              |
 | \\( I(x, y) \\)                                     | Pixel value at position \\( (x, y) \\) in image \\( I \\).              |
 | \\( I'(x, y) \\)                                    | Pixel value after transformations.                                  |
