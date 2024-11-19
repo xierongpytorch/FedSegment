@@ -3,6 +3,24 @@ Journal Title: Pattern Recognition
 Title of the **Manuscript**: *FedSegment: A Novel Federated Learning Framework for Semantic Segmentation of Secondary Screen Cabinet Terminal Block in Smart Substation* 
 
 Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
+<div align="center">
+    <h1>公式示例</h1>
+    <!-- MathJax 配置 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\\[','\\]']],
+            processEscapes: true
+            }
+        });
+    </script>
+    <!-- 行内公式 -->
+    $\int_{a}^{b} x^2 dx$
+    <!-- 单行公式 -->
+    $$ \sum_{n=1}^{\infty} \frac{1}{n^2} $$
+</div>
 
 ### Symbols and Notations Used in the Methodology
 
