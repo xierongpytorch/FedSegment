@@ -4,7 +4,7 @@ Title of the **Manuscript**: *FedSegment: A Novel Federated Learning Framework f
 
 Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 
-### Symbols and Notations Used in the Methodology[替换文本](https://www.baidu.com/)
+### Symbols and Notations Used in the Methodology (Install [MathJax Plugin for Github]([https://www.baidu.com/](https://chromewebstore.google.com/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en)))
 | **Symbol**                                | **Description**                                                     |
 |-------------------------------------------|---------------------------------------------------------------------|
 | $F$                                 | Input feature map extracted by the encoder.                         |
