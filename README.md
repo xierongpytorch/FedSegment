@@ -85,9 +85,9 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ L_{\text{total}} $                            | Total loss including $ L_{\text{CE}} $ and $ L_{\text{pair}} $. |
 | $ \beta $                                       | Hyperparameter controlling the weight of $ L_{\text{pair}} $.     |
 | $ \log(\cdot) $                                 | Natural logarithm function.                                         |
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T1.png "Semantic Segmentation Model Symbols")
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T2.png "Anonymous Identity Authentication Protocol Symbols")
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T3.png "Stabilization Strategy Symbols")
+|![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T1.png "Semantic Segmentation Model Symbols")|Semantic Segmentation Model Symbols                                         |
+|![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T2.png "Anonymous Identity Authentication Protocol Symbols")| Anonymous Identity Authentication Protocol Symbols                                       |
+|![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T3.png "Stabilization Strategy Symbols")| Stabilization Strategy Symbols                                    |
 
 
 ### Ideal Model:
