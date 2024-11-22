@@ -85,26 +85,28 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 | $ L_{\text{total}} $                            | Total loss including $ L_{\text{CE}} $ and $ L_{\text{pair}} $. |
 | $ \beta $                                       | Hyperparameter controlling the weight of $ L_{\text{pair}} $.     |
 | $ \log(\cdot) $                                 | Natural logarithm function.                                         |
-
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T1.png "Semantic Segmentation Model Symbols")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T2.png "Anonymous Identity Authentication Protocol Symbols")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T3.png "Stabilization Strategy Symbols")
 
 
 ### Ideal Model:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/ideal%20model.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/ideal%20model.png "Ideal Model")
 
 ### Federated Model:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/federated%20model.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/federated%20model.png "Federated Model")
 
 ### FedSegment:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/system%20model.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/system%20model.png "FedSegment")
 
 ### Semantic Segmentation:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/segmentation%20model.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/segmentation%20model.png "Semantic Segmentation")
 
 ### Anonymous Protocol:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/anonymous%20protocol.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/anonymous%20protocol.png "Anonymous Protocol")
 
 ### Data Augmentation:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/data%20augmentation.png "DBSCAN Performance Comparison")
+![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/data%20augmentation.png "Data Augmentation")
 
 
 
