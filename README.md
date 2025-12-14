@@ -90,23 +90,6 @@ Authors: Rong Xie, Zhong Chen, Weiguo Cao, Congying Wu and Tiecheng Li
 |![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/T3.png "Stabilization Strategy Symbols")| Stabilization Strategy Symbols                                    |
 
 
-### Ideal Model:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/ideal%20model.png "Ideal Model")
-
-### Federated Model:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/federated%20model.png "Federated Model")
-
-### FedSegment:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/system%20model.png "FedSegment")
-
-### Semantic Segmentation:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/segmentation%20model.png "Semantic Segmentation")
-
-### Anonymous Protocol:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/anonymous%20protocol.png "Anonymous Protocol")
-
-### Data Augmentation:
-![image text](https://github.com/xierongpytorch/FedSegment/blob/main/PICTURE/data%20augmentation.png "Data Augmentation")
 
 
 
